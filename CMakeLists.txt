@@ -3,4 +3,4 @@ project(usaco)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(usaco section1/2/2_gift1/Gift1.cpp)
+add_executable(usaco section1/2/3_friday/friday.cpp)
