@@ -20,24 +20,22 @@ int main() {
     map<string, int> accounts;
 
     int np;
-    fin >> np; fin.ignore();
+    fin >> np;
 
 
 
     for (int i = 0; i < np; ++i) {
-        getline(fin, names[i]);
+        fin >> names[i];
         accounts[names[i]] = 0;
     }
 
 
 
-    while (fin.peek() != EOF) {
+    for (int i = 0; i < np; ++i) {
         string giver;
         int amount, numPerson, amountGiven;
 
-        getline(fin, giver);
-
-        fin >> amount >> numPerson; fin.ignore();
+        fin >> giver >> amount >> numPerson; fin.ignore();
 
         if (numPerson == 0 || amount == 0) continue;
 
@@ -45,7 +43,7 @@ int main() {
 
         for (int i = 0; i < numPerson; ++i) {
             string receiver;
-            getline(fin, receiver);
+            fin >> receiver;
             accounts[receiver] += amountGiven;
         }
 
