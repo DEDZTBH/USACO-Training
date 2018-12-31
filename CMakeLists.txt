@@ -3,4 +3,4 @@ project(usaco)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(usaco section1/2/4_beads/Beads.cpp)
+add_executable(usaco section1/3/1_milk2/Milk2.cpp)
